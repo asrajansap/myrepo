@@ -8,6 +8,6 @@ spec:
     maxReplicas: 1
     containers:
       - name: kserve-container
-        image: docker.io/YOUR_DOCKER_USERNAME/simple-test:latest
+        image: docker.io/s0026942030/simple-test:latest
         imagePullSecrets:
-          - name: mydockerregistry
+          - name: rajdoc-registry
