@@ -1,0 +1,13 @@
+apiVersion: ai.sap.com/v1alpha1
+kind: ServingTemplate
+metadata:
+  name: simple-serving
+spec:
+  predictor:
+    minReplicas: 1
+    maxReplicas: 1
+    containers:
+      - name: kserve-container
+        image: docker.io/YOUR_DOCKER_USERNAME/simple-test:latest
+        imagePullSecrets:
+          - name: mydockerregistry
