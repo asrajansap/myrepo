@@ -1,6 +1,0 @@
-apiVersion: ai.sap.com/v1alpha1
-kind: Scenario
-metadata:
-  name: simple-scenario
-spec:
-  description: "Test scenario for AI Core"
