@@ -16,10 +16,10 @@ spec:
     spec:
       predictor:
         type: lowConcurrency
-        imagePullSecrets:
-          - name: rajdoc-registry
         minReplicas: 1
         maxReplicas: 1
+        imagePullSecrets:
+          - name: rajdoc-registry
         containers:
           - name: kserve-container
             image: docker.io/s0026942030/simple-test:latest
