@@ -4,7 +4,7 @@ metadata:
   name: simple-serving
 spec:
   template: 
-    apiVersion: serving.kserve.io/v1beta1
+    apiVersion: "serving.kserve.io/v1beta1"
     kind: InferenceService
     metadata:
       name: simple-serving
