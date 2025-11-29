@@ -9,7 +9,7 @@ metadata:
     executables.ai.sap.com/name: Short dump usecase -scenario-exec"
   labels:
     ai.sap.com/version: 0.1.0
-    scenarios.ai.sap.com/id: "Short dump" 
+    scenarios.ai.sap.com/id: "Short-dump" 
 spec:
   template:
     metadata: {}
