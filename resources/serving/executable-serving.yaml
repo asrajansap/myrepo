@@ -2,16 +2,23 @@ apiVersion: ai.sap.com/v1alpha1
 kind: ServingTemplate
 metadata:
   name: simple-serving
+  annotations:
+    scenarios.ai.sap.com/description: "Short dump tutorial scenario"
+    scenarios.ai.sap.com/name: "Short dump usecase -scenario"
+    executables.ai.sap.com/description: "Short dump usecase Analysis"
+    executables.ai.sap.com/name: Short dump usecase -scenario-exec"
+  labels:
+    ai.sap.com/version: 0.1.0
+    scenarios.ai.sap.com/id: "Short dump" 
 spec:
   template:
-    metadata: {}            # optional but safe
+     apiVersion: "serving.kserve.io/v1beta1"
     spec:
       predictor:
-        type: lowConcurrency
-        minReplicas: 1
-        maxReplicas: 1
         imagePullSecrets:
         - name: rajdoc-registry
+        minReplicas: 1
+        maxReplicas: 1
         containers:
         - name: kserve-container
           image: docker.io/s0026942030/simple-test:latest
