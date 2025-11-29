@@ -6,10 +6,10 @@ metadata:
     scenarios.ai.sap.com/description: "Short dump tutorial scenario"
     scenarios.ai.sap.com/name: "Short dump usecase -scenario"
     executables.ai.sap.com/description: "Short dump usecase Analysis"
-    executables.ai.sap.com/name: Short dump usecase -scenario-exec"
+    executables.ai.sap.com/name: "Short dump usecase-scenario-exec"
   labels:
     ai.sap.com/version: 0.1.0
-    scenarios.ai.sap.com/id: "Short-dump" 
+    scenarios.ai.sap.com/id: "Shortdump" 
 spec:
   template:
     metadata: {}
