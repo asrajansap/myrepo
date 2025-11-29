@@ -14,7 +14,7 @@ spec:
   template:
     apiVersion: "serving.kserve.io/v1beta1"
     metadata: {}
-    spec:
+    spec: |
       predictor:
         type: lowConcurrency
         minReplicas: 1
