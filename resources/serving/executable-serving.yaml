@@ -3,7 +3,7 @@ kind: ServingTemplate
 metadata:
   name: simple-serving
 spec:
-  template:
+  template:mypipeline
     spec:
       predictor:
         imagePullSecrets:
