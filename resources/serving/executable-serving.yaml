@@ -3,13 +3,15 @@ kind: ServingTemplate
 metadata:
   name: simple-serving
 spec:
-  template:mypipeline
+  template:
+    metadata: {}            # optional but safe
     spec:
       predictor:
-        imagePullSecrets:
-          - name: rajdoc-registry
+        type: lowConcurrency
         minReplicas: 1
         maxReplicas: 1
+        imagePullSecrets:
+        - name: rajdoc-registry
         containers:
-          - name: kserve-container
-            image: docker.io/s0026942030/simple-test:latest
+        - name: kserve-container
+          image: docker.io/s0026942030/simple-test:latest
